@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -156,62 +157,15 @@ body {
 }
 
 
-/* .section .hex-group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.section .hex-group>button {
-    cursor: pointer;
-    background: none;
-    border: none;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    margin-left: 10px;
-    transition: all ease 300ms;
-}
-.hex-group>button:hover {
-    transform: scale(1.1);
-}
-.hex-group>button:active{
-    -webkit-tap-highlight-color: transparent;
-}
-
-.section .hex-info {
-    position: relative;
-}
-
-#copied {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 20px;
-    transition: all ease 300ms;
-    backdrop-filter: blur(3px) opacity(.95);
+a {
     color: #000;
-    z-index: 999;
-    -webkit-animation: copiedText 1500ms;
-    animation: copiedText 1500ms;
+    font-size: 18px;
 }
 
-@keyframes copiedText {
-    0%{
-        transform: scale(0);
-    }
-    50% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(0);
-    }
-} */
+.social-media {
+    padding: 30px 0;
+    font-size: 16px;
+}
 
 @media screen and (max-width: 414px) {
     .section .colors-container {
