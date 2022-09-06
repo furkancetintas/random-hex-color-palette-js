@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding: 30px 0px;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.section-header h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.section button#generate {
+    cursor: pointer;
+    padding: 10px 15px;
+    background: none;
+    border: 3px solid;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    transition: all ease 500ms;
+}
+
+.section button#generate:hover {
+    border-radius: 15px;
+}
+
+.section .colors-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 30px 0px;
+}
+
+.colors-container .card-color{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 30px 35px;
+    min-width: 200px;
+    margin: 15px;
+    transition: all ease 800ms;
+    background: #000;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+.card-color:hover{
+    border-radius: 25px;
+}
+.card-color::after{
+    content: "Kopyala";
+    position: absolute;
+    right: 0;
+    top: -15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 40%;
+    height: 0;
+    font-size: 14px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    transition: all 0.6s ease;
+    -webkit-font-smoothing: antialiased;
+}
+ .card-color:hover::after{
+    height: 35%;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.section .hex-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.color-details{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 999;
+    /* background: red; */
+}
+
+.color-details .copied-color{
+    font-weight: bold;
+    font-size: 26px;
+    transition: all ease 300ms;
+    color: #fff;
+    -webkit-animation: copiedText 1500ms;
+    text-shadow: 2px 2px 4px #000000;
+    animation: copiedText 1500ms;
+    
+}
+
+@keyframes copiedText {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+
+/* .section .hex-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section .hex-group>button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-left: 10px;
+    transition: all ease 300ms;
+}
+.hex-group>button:hover {
+    transform: scale(1.1);
+}
+.hex-group>button:active{
+    -webkit-tap-highlight-color: transparent;
+}
+
+.section .hex-info {
+    position: relative;
+}
+
+#copied {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all ease 300ms;
+    backdrop-filter: blur(3px) opacity(.95);
+    color: #000;
+    z-index: 999;
+    -webkit-animation: copiedText 1500ms;
+    animation: copiedText 1500ms;
+}
+
+@keyframes copiedText {
+    0%{
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+} */
+
+@media screen and (max-width: 414px) {
+    .section .colors-container {
+        margin: 5px 0px;
+    }
+    .colors-container .card-color{
+        padding: 20px 20px;
+        min-width: 200px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .section {
+        width: 250px;
+    }
+    .section-header h2{
+        font-size: 20px;
+    }
+}
