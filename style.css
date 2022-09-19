@@ -1,191 +1,207 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    width: 100%;
-    height: 100vh;
-    background: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
 }
 
 .section {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    padding: 30px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding: 30px 0px;
 }
 
 .section-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: #000;
-    margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #000;
+  margin-bottom: 30px;
 }
 
 .section-header h2 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 30px;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
 }
 
-.section button#generate {
-    cursor: pointer;
-    padding: 10px 15px;
-    background: none;
-    border: 3px solid;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    transition: all ease 500ms;
+.section-button {
+  cursor: pointer;
+  padding: 10px 15px;
+  background: none;
+  border: 3px solid;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  transition: all ease 500ms;
 }
 
-.section button#generate:hover {
-    border-radius: 15px;
+.section-button:hover {
+  border-radius: 15px;
+}
+.section-button-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
 .section .colors-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 1000px;
-    margin: 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 30px 0px;
 }
 
 .colors-container .card-color {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    padding: 30px 35px;
-    min-width: 200px;
-    margin: 15px;
-    transition: all ease 800ms;
-    background: #000;
-    color: #fff;
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 30px 35px;
+  min-width: 200px;
+  margin: 15px;
+  transition: all ease 800ms;
+  background: #000;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
 
 .card-color:hover {
-    border-radius: 25px;
+  border-radius: 25px;
 }
 
 .card-color::after {
-    content: "Kopyala";
-    position: absolute;
-    right: 0;
-    top: -15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    width: 40%;
-    height: 0;
-    font-size: 14px;
-    border-radius: 15px;
-    background: rgba(0, 0, 0, 0.7);
-    transition: all 0.6s ease;
-    -webkit-font-smoothing: antialiased;
+  content: "Kopyala";
+  position: absolute;
+  right: 0;
+  top: -15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 40%;
+  height: 0;
+  font-size: 14px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  transition: all 0.6s ease;
+  -webkit-font-smoothing: antialiased;
 }
 
 .card-color:hover::after {
-    height: 35%;
-    top: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 35%;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section .hex-text {
-    font-family: 'Poppins', sans-serif;
-    font-size: 22px;
-    margin: 0;
-    color: #fff;
-    text-shadow: 2px 2px 4px #000000;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  margin: 0;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .color-details {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: 999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 999;
 }
 
 .color-details .copied-color {
-    font-weight: bold;
-    font-size: 26px;
-    transition: all ease 300ms;
-    color: #fff;
-    -webkit-animation: copiedText 1500ms;
-    text-shadow: 2px 2px 4px #000000;
-    animation: copiedText 1500ms;
-
+  font-weight: bold;
+  font-size: 26px;
+  transition: all ease 300ms;
+  color: #fff;
+  -webkit-animation: copiedText 1500ms;
+  text-shadow: 2px 2px 4px #000000;
+  animation: copiedText 1500ms;
 }
 
 @keyframes copiedText {
-    0% {
-        transform: scale(0);
-    }
+  0% {
+    transform: scale(0);
+  }
 
-    50% {
-        transform: scale(1.5);
-    }
+  50% {
+    transform: scale(1.5);
+  }
 
-    100% {
-        transform: scale(0);
-    }
+  100% {
+    transform: scale(0);
+  }
 }
 
-
 a {
-    color: #000;
-    font-size: 18px;
+  color: #000;
+  font-size: 18px;
 }
 
 .social-media {
-    padding: 30px 0;
-    font-size: 16px;
+  padding: 30px 0;
+  font-size: 16px;
+}
+
+.theme.dark {
+  background-color: rgb(24, 24, 24);
+  color: rgb(220, 220, 220);
+  border-color: rgb(220, 220, 220);
+}
+.theme.light {
+  background-color: rgb(220, 220, 220);
+  color: rgb(24, 24, 24);
+  border-color: rgb(24, 24, 24);
 }
 
 @media screen and (max-width: 414px) {
-    .section .colors-container {
-        margin: 5px 0px;
-    }
+  .section .colors-container {
+    margin: 5px 0px;
+  }
 
-    .colors-container .card-color {
-        padding: 20px 20px;
-        min-width: 200px;
-    }
+  .colors-container .card-color {
+    padding: 20px 20px;
+    min-width: 200px;
+  }
 }
 
 @media screen and (max-width: 280px) {
-    .section {
-        width: 250px;
-    }
+  .section {
+    width: 250px;
+  }
 
-    .section-header h2 {
-        font-size: 20px;
-    }
+  .section-header h2 {
+    font-size: 20px;
+  }
 }
