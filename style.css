@@ -179,11 +179,6 @@ a {
   color: rgb(220, 220, 220);
   border-color: rgb(220, 220, 220);
 }
-.theme.light {
-  background-color: rgb(220, 220, 220);
-  color: rgb(24, 24, 24);
-  border-color: rgb(24, 24, 24);
-}
 
 @media screen and (max-width: 414px) {
   .section .colors-container {
