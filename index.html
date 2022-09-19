@@ -5,15 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hex Color Generate</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="theme">
     <section class="section">
       <div class="section-header">
-        <h2>Random Hex Color Generate</h2>
-        <button id="generate">Generate Colors</button>
+        <h2 class="theme">Random Hex Color Generate</h2>
+        <div class="section-button-container">
+          <button class="section-button theme" id="generate">
+            Generate Colors
+          </button>
+          <button class="section-button theme" id="theme-button">
+            Dark Mode
+          </button>
+        </div>
       </div>
+
       <div class="colors-container">
         <div class="card-color">
           <h3 class="hex-text">#000000</h3>
@@ -40,12 +54,12 @@
           <h3 class="hex-text">#000000</h3>
         </div>
       </div>
-      <div class="social-media">
+      <div class="social-media theme">
         <a href="https://github.com/furkancetintas">
-          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-github theme"></i>
         </a>
         <a href="https://www.linkedin.com/in/furkancetintas/">
-          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-linkedin-in theme"></i>
         </a>
         /furkancetintas
       </div>
@@ -54,5 +68,6 @@
       <h2 class="copied-color">Kopyalandı!</h2>
     </div>
     <script src="main.js"></script>
+    <script src="theme.js"></script>
   </body>
 </html>
